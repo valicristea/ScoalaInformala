@@ -6,4 +6,9 @@ public class Bird extends Animal {
         this.age = age;
         this.wingspan = wingspan;
     }
+
+@Override
+    public String toString(){
+    return "Bird name is " + name + " has " + age + " years,and has " + wingspan + " cm.";
+    }
 }

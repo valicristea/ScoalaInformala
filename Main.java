@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        Animal system = new Animal();
+        Zoo system = new Zoo();
 
         Animal animal1 = new Bird("Coco", 12, 135);
         Animal animal2 = new Mammals("Bizu", 32, true);
@@ -8,6 +8,13 @@ public class Main {
         Animal animal4 = new Mammals("Zgarciu",28,false);
         System.out.println("----------------------------------");
 
-        Animal.addAnimal(animal1);
+        system.addAnimal(animal1);
+        system.addAnimal(animal2);
+        system.addAnimal(animal3);
+        system.addAnimal(animal4);
+        system.listAnimals();
+        System.out.println("----------------------------");
+        system.deleteAnimal("Coco");
+        system.listAnimals();
     }
 }

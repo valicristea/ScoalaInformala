@@ -7,7 +7,7 @@ public class Mammals extends Animal{
        this.isNocturn = true;
 
     }
-
+@Override
     public String toString(){
         return "Mammal name is " + name + " has " + age + " years,and is " + true;
     }
